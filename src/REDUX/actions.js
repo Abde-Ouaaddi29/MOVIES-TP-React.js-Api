@@ -2,7 +2,6 @@ export const GET_MOVIES = 'GET_MOVIES';
 export const SET_PAGES = 'SET_PAGES';
 export const SET_SEARCH = 'SET_SEARCH';
 export const SET_ERROR = 'SET_ERROR';
-// export const SET_SELECT = 'SET_SELECT';
 
 
 export const GETMOVIES = (data) => {
@@ -33,9 +32,3 @@ export const SETERROR = (data) => {
     }
 }
 
-// export const SETSELECT = (data) => {
-//     return {
-//         type:SET_SELECT,
-//         payload:data
-//     }
-// }

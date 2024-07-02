@@ -1,6 +1,7 @@
 import { useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { SETSEARCH } from "../REDUX/actions";
+import { Link } from "react-router-dom";
 
 export default function Nav(){
   const searchRef = useRef()
@@ -17,6 +18,7 @@ export default function Nav(){
       console.log(searchValue)
       dispatch(SETSEARCH(searchValue))
       document.querySelector('#search').value = '';
+      dispatch(SETSEARCH(''))
   }
 
 
@@ -24,13 +26,15 @@ export default function Nav(){
        <nav className="bg-purple-300 flex  justify-center items-center shadow-md">
         <div className="w-10/12  flex p-4 justify-between items-center">
            <div className="w-3/12 ">
-              <div className="flex justify-center items-center font-bold text-xl text-purple-950 tracking-widest w-8/12 cursor-pointer">
-                M <Icont/> OVIES
-              </div>
+             <Link to={'/'}>
+                 <div className="flex justify-center items-center font-bold text-xl text-purple-950 tracking-widest w-8/12 cursor-pointer">
+                    M <Icont/> OVIES
+                  </div>
+             </Link>
            </div>
-           <div className=" w-4/12 flex justify-center">
+           <div className=" lg:w-4/12 w-8/12 flex justify-center">
              <input ref={searchRef} className="w-8/12 rounded px-3 outline-purple-300" placeholder="search..." type="text" name="search" id="search" />
-             <button onClick={handleSearch}  className="px-4 py-1 ml-1 rounded bg-purple-200 font-light tracking-tight">search</button>
+             <button onClick={handleSearch}  className=" hover:bg-purple-400  lg:px-4 px-2 py-1 ml-1 rounded bg-purple-200 font-light tracking-tight hover:transition-all">search</button>
            </div>
         </div>
        </nav>

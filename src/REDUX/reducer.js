@@ -4,11 +4,10 @@ import { GET_MOVIES, SET_ERROR, SET_PAGES, SET_SEARCH  } from "./actions";
 const initialValues = {
   movies:[],
   page:'',
-  search:'1',
+  search:'',
   BASEURL:'https://image.tmdb.org/t/p/w1280',
-  error:'404',
-//   select_lang:'ko'
-}
+  error:'404'
+ }
 
 
 export default function Reducer( state=initialValues,action) {
@@ -36,7 +35,7 @@ export default function Reducer( state=initialValues,action) {
     case SET_SEARCH:
         return {
           ...state,
-          search: action.payload,
+          search:action.payload,
           movies: {
             ...state.movies,
             results: state.movies.results.filter((movie) => {

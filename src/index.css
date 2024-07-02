@@ -12,3 +12,14 @@
     display: block;
     opacity: 1;
   }
+
+  /* .film{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .parent:hover .film {
+    display: block;
+    opacity: 1;
+  } */
