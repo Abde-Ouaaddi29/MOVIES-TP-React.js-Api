@@ -10,7 +10,7 @@ export default function App() {
     <Provider store={Store}>
       <Router>
         <Routes>
-            <Route path="/MOVIES_TP/" element={ <Layout/> }>
+            <Route path="/" element={ <Layout/> }>
                 <Route index element={<Body/>} />
                 <Route path=":id" element={<Show/>} />
             </Route>
