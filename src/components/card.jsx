@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux"
+import { Link } from "react-router-dom";
 
 export default function Card(){
 
@@ -20,14 +21,14 @@ export default function Card(){
 return <>
         {films && films.map((film) => {
              return  <>
-             <div key={film.id} className="parent h-48 rounded flex-col relative shadow cursor-pointer " >
+             <Link to={`/${film.id}`} key={film.id} className="parent h-48 rounded flex-col relative shadow cursor-pointer " >
                <img src={imgUrl+film.backdrop_path} alt="img" className="absolute rounded inset-0 w-full h-full object-cover -z-10" />
                 <div className="name-film w-9/12 m-auto mt-2 p-1 rounded bg-black text-center text-yellow-300 font-light border border-yellow-300 ">{sliceTiltle(film.name, 23)}</div>
                 <div className="w-10/12 flex justify-between m-auto absolute bottom-5 right-6 ">
                   <span className="bg-black border border-yellow-300 px-3 flex justify-center  rounded-md text-yellow-300  font-light tracking-wider">{film.original_language}</span>
                   <span className="bg-red-700 px-2 py-1 font-semibold rounded-md text-white tracking-wider flex justify-center items-center">{film.vote_average} <span className="ml-2"><Star/></span></span>
                 </div>
-             </div>
+             </Link>
              </>
          })
      }    

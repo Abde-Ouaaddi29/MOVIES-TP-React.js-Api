@@ -23,20 +23,6 @@ export default function Nav(){
   return (<>
        <nav className="bg-purple-300 flex  justify-center items-center shadow-md">
         <div className="w-10/12  flex p-4 justify-between items-center">
-           {/* <div className="bg-purple-500-300 w-4/12 "> */}
-
-             {/* <select name="lang" className="w-8/12 px-3 py-1 rounded outline-purple-300"> */}
-               {/* <option value="">language</option> */}
-               {/* {films && films.map((film) => {
-                  return <>
-                     <option key={film.id} value={film.original_language}>{film.original_language}</option>
-                  </>
-               })} */}
-
-                {/* <option value="jap">jap</option>
-                <option value="eng">eng</option> */}
-             {/* </select> */}
-           {/* </div> */}
            <div className="w-3/12 ">
               <div className="flex justify-center items-center font-bold text-xl text-purple-950 tracking-widest w-8/12 cursor-pointer">
                 M <Icont/> OVIES
