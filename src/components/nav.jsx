@@ -23,7 +23,7 @@ export default function Nav(){
 
 
   return (<>
-       <nav className="bg-purple-300 flex  justify-center items-center shadow-md">
+       <nav className="bg-black flex  justify-center items-center shadow-md">
         <div className="w-10/12  flex p-4 justify-between items-center">
            <div className="w-3/12 ">
              <Link to={'/'}>
