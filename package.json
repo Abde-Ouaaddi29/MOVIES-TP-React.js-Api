@@ -2,7 +2,7 @@
   "name": "movies_app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Abde-Ouaaddi29.github.io/MOVIES_TP",
+  "homepage": "https://Abde-Ouaaddi29.github.io/MOVIES_TP/",
   "type": "module",
   "scripts": {
     "dev": "vite",
