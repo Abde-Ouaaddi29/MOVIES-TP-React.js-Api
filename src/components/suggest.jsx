@@ -27,7 +27,6 @@ export default function Suggest({suggestionMovies}) {
                         <div className="   p-3 text-sm text-white font-light">
                             <span className="name-film absolute bottom-2 left-2 text-sm bg-black px-2 py-1 rounded  text-yellow-400 border border-yellow-400 ">  { sliceTiltle(film.original_name, 20)} </span>
                         </div>
-                
             </Link>
               
             </>
