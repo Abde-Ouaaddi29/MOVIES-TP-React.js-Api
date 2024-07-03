@@ -51,7 +51,7 @@ export default function API(){
 
 useEffect(()=>{
     fetchIt()
-},[page,dispatch])
+},[search, page,dispatch])
 
 
 }

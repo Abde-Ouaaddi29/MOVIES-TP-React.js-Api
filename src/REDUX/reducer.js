@@ -3,7 +3,7 @@ import { GET_MOVIES, SET_ERROR, SET_PAGES, SET_SEARCH  } from "./actions";
 
 const initialValues = {
   movies:[],
-  page:'',
+  page:'1',
   search:'',
   BASEURL:'https://image.tmdb.org/t/p/w1280',
   error:'404'
