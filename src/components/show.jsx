@@ -9,7 +9,6 @@ export default function Show(){
     const {id} = useParams();
     const imgUrl = useSelector((store) => store.BASEURL);
     const films = useSelector((store) => store.movies.results)
-    const page = useSelector((store) => store.page)
 
     
     if( !id) {
@@ -18,7 +17,7 @@ export default function Show(){
     }
 
     const film = films.find(item => {
-        return item.id === parseInt(id)
+        return item.id == parseInt(id)
     });
 
     console.log(film)
